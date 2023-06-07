@@ -22,10 +22,10 @@ Output:
 '''
 
 
-def fibs_fizz_buzz(n: int) -> int:
+def fibs_fizz_buzz(n: int) -> list[int | str]:
     x, y = 0, 1
     fib = []
-    for i in range(n):
+    for _ in range(n):
         x, y = y, y + x
         if (not x % 3) and (not x % 5):
             fib.append('FizzBuzz')

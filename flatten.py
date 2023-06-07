@@ -21,8 +21,8 @@ def flatten(*args) -> list:
 
 
 print(flatten(1, [2, 3], 4, 5, [6, [7]]))  # returns [1, 2, 3, 4, 5, 6, 7]
-# returns ['a', 'b', 2, 3, None, 4, 'c']
 print(flatten('a', ['b', 2], 3, None, [[4], ['c']]))
+# returns ['a', 'b', 2, 3, None, 4, 'c']
 
 
 # Another solution
