@@ -30,10 +30,8 @@ class Solution:
         :rtype: bool
         """
         def check(p, q):
-            # if both are None
             if not p and not q:
                 return True
-            # one of p and q is None
             if not q or not p:
                 return False
             if p.val != q.val:
@@ -51,20 +49,3 @@ class Solution:
                 deq.append((p.right, q.right))
 
         return True
-
-    def isSameTreeRecursion(self, p, q):
-        """
-        :type p: TreeNode
-        :type q: TreeNode
-        :rtype: bool
-        """
-        # p and q are both None
-        if not p and not q:
-            return True
-        # one of p and q is None
-        if not q or not p:
-            return False
-        if p.val != q.val:
-            return False
-        return self.isSameTreeRecursion(p.right, q.right) and \
-            self.isSameTreeRecursion(p.left, q.left)

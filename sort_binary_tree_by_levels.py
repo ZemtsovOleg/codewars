@@ -23,12 +23,12 @@ print(tree_by_levels(Node(Node(None, Node(None, None, 4), 2), Node(
 
 
 
-def serpentine_traversal(node: Node, result=None) -> list:
-    if result is None:
-        result = []
-    if node is None:
-        return
-    serpentine_traversal(node.left, result)
-    result.append(node.value)
-    serpentine_traversal(node.right, result)
-    return result
+# def serpentine_traversal(node: Node, result=None) -> list:
+#     if result is None:
+#         result = []
+#     if node is None:
+#         return
+#     serpentine_traversal(node.left, result)
+#     result.append(node.value)
+#     serpentine_traversal(node.right, result)
+#     return result
